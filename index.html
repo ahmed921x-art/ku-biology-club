@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>نادي العلوم البيولوجية | جامعة الكويت</title>
+  <meta name="description" content="الموقع الرسمي لنادي العلوم البيولوجية في جامعة الكويت: فعاليات، ورش، فرص تطوع، وتواصل." />
+
+  <style>
+    :root{
+      --bg:#0b1220; --card:#0f1a30; --text:#e9eefc; --muted:#aab7e6;
+      --accent:#64ffda; --accent2:#7aa7ff; --border:rgba(255,255,255,.08);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,"Noto Kufi Arabic",Arial;
+      background:radial-gradient(1000px 600px at 80% 10%, rgba(122,167,255,.25), transparent 60%),
+                 radial-gradient(900px 500px at 10% 20%, rgba(100,255,218,.18), transparent 55%),
+                 var(--bg);
+      color:var(--text);
+    }
+    a{color:inherit}
+    .wrap{max-width:1100px;margin:auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{
+      width:52px;height:52px;border-radius:16px;
+      border:1px solid var(--border);
+      background:rgba(255,255,255,.04);
+      display:grid;place-items:center;overflow:hidden;
+    }
+    .logo img{width:100%;height:100%;object-fit:contain;padding:8px}
+    nav{display:flex;gap:14px;flex-wrap:wrap}
+    nav a{padding:10px 12px;border:1px solid var(--border);border-radius:14px;text-decoration:none;color:var(--muted)}
+    nav a:hover{color:var(--text);border-color:rgba(100,255,218,.35)}
+
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:18px;align-items:stretch;margin-top:18px}
+    .card{background:rgba(15,26,48,.7);border:1px solid var(--border);border-radius:22px;padding:22px;backdrop-filter: blur(8px)}
+    .hero h1{margin:0 0 10px;font-size:38px;line-height:1.2}
+    .hero p{margin:0 0 18px;color:var(--muted);font-size:16px;line-height:1.9}
+
+    .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:8px}
+    .btn{display:inline-block;padding:12px 16px;border-radius:16px;text-decoration:none;font-weight:800}
+    .btn.primary{background:linear-gradient(135deg, rgba(100,255,218,.95), rgba(122,167,255,.95));color:#07101f}
+    .btn.ghost{border:1px solid rgba(100,255,218,.35);color:var(--text)}
+
+    .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+    .stat{padding:14px;border-radius:18px;border:1px solid var(--border);background:rgba(11,18,32,.35)}
+    .stat b{display:block;font-size:18px;margin-bottom:6px}
+    .stat span{color:var(--muted);font-size:13px}
+
+    section{margin-top:18px}
+    .section-title{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:10px}
+    .section-title h2{margin:0;font-size:22px}
+    .section-title p{margin:0;color:var(--muted)}
+
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:14px}
+    .item h3{margin:0 0 8px}
+    .item p{margin:0;color:var(--muted);line-height:1.8}
+
+    .events{display:grid;grid-template-columns:1.4fr .6fr;gap:14px}
+    .event{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;padding:14px;border-radius:18px;border:1px solid var(--border);background:rgba(11,18,32,.35)}
+    .event small{color:var(--muted)}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;border:1px solid rgba(122,167,255,.35);color:#d7e1ff;font-size:12px}
+
+    footer{margin:28px 0 10px;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+    .social a{margin-left:10px}
+
+    @media (max-width: 900px){
+      .hero{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+      .events{grid-template-columns:1fr}
+      .stats{grid-template-columns:1fr}
+      nav{gap:10px}
+    }
+  </style>
+</head>
+
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-label="شعار النادي">
+          <!-- حط شعارك هنا باسم: logo.png داخل نفس المجلد -->
+          <img src="logo.png" alt="شعار نادي العلوم البيولوجية" onerror="this.style.display='none'; this.parentElement.textContent='🧬';" />
+        </div>
+        <div>
+          <div style="font-weight:900">نادي العلوم البيولوجية</div>
+          <div style="color:var(--muted);font-size:13px">جامعة الكويت</div>
+        </div>
+      </div>
+
+      <nav>
+        <a href="#about">من نحن</a>
+        <a href="#events">الفعاليات</a>
+        <a href="#team">الفريق</a>
+        <a href="#join">انضم</a>
+        <a href="#contact">تواصل</a>
+      </nav>
+    </header>
+
+    <div class="hero">
+      <div class="card">
+        <h1>مجتمع طلابي لعلوم الأحياء 🧬</h1>
+        <p>
+          الموقع الرسمي لنادي العلوم البيولوجية في جامعة الكويت. ننظم ورش ومبادرات علمية،
+          ونبني مجتمع يساعد الطلبة يطورون مهاراتهم ويشاركون شغفهم بعلم الأحياء.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#join">انضم للنادي</a>
+          <a class="btn ghost" href="#events">شوف الفعاليات</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat"><b>ورش علمية</b><span>مختبرات • مهارات بحث • عروض</span></div>
+          <div class="stat"><b>فعاليات</b><span>لقاءات • مسابقات • زيارات</span></div>
+          <div class="stat"><b>فرص تطوع</b><span>تنظيم • إعلام • محتوى</span></div>
+        </div>
+      </div>
+
+      <div class="card" id="about">
+        <div class="section-title">
+          <h2>من نحن</h2>
+          <span class="pill">KU Biology Club</span>
+        </div>
+        <p style="color:var(--muted);line-height:1.9;margin:0">
+          نادي طلابي يركّز على نشر الثقافة العلمية في مجالات مثل: Genetics, Microbiology, Ecology
+          وبناء شبكة من الطلبة المهتمين. نرحّب بكل التخصصات.
+        </p>
+
+        <div class="grid" style="margin-top:14px">
+          <div class="item">
+            <h3>رسالتنا</h3>
+            <p>نشر المعرفة وتطوير المهارات العملية للطلبة.</p>
+          </div>
+          <div class="item">
+            <h3>رؤيتنا</h3>
+            <p>نادي مؤثر يصنع قادة وباحثين صاعدين.</p>
+          </div>
+          <div class="item">
+            <h3>قيمنا</h3>
+            <p>فضول علمي • تعاون • جودة • مسؤولية.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="events" class="card">
+      <div class="section-title">
+        <h2>الفعاليات القادمة</h2>
+        <p>عدّل التاريخ/الاسم براحتك</p>
+      </div>
+
+      <div class="events">
+        <div>
+          <div class="event">
+            <div>
+              <b>ورشة: أساسيات كتابة تقرير مخبري</b><br/>
+              <small>المكان: ____ • الوقت: ____</small>
+            </div>
+            <span class="pill">قريبًا</span>
+          </div>
+
+          <div style="height:10px"></div>
+
+          <div class="event">
+            <div>
+              <b>لقاء: مسارات التخصص في البيولوجي</b><br/>
+              <small>ضيف: ____ • الوقت: ____</small>
+            </div>
+            <span class="pill">محاضرة</span>
+          </div>
+
+          <div style="height:10px"></div>
+
+          <div class="event">
+            <div>
+              <b>زيارة: مختبرات الجامعة</b><br/>
+              <small>التسجيل محدود • اليوم: ____</small>
+            </div>
+            <span class="pill">ميداني</span>
+          </div>
+        </div>
+
+        <div class="card" style="background:rgba(11,18,32,.35)">
+          <b>التسجيل</b>
+          <p style="color:var(--muted);line-height:1.8;margin:10px 0 0">
+            ضع هنا رابط التسجيل للفعاليات (Google Form / Microsoft Form).
+          </p>
+          <div style="margin-top:12px">
+            <a class="btn primary" href="#join">سجّل</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team" class="card">
+      <div class="section-title">
+        <h2>فريق النادي</h2>
+        <p>استبدل الأسماء والمناصب</p>
+      </div>
+      <div class="grid">
+        <div class="item card" style="background:rgba(11,18,32,.35)">
+          <h3>رئيس النادي</h3>
+          <p>الاسم: ____</p>
+        </div>
+        <div class="item card" style="background:rgba(11,18,32,.35)">
+          <h3>نائب الرئيس</h3>
+          <p>الاسم: ____</p>
+        </div>
+        <div class="item card" style="background:rgba(11,18,32,.35)">
+          <h3>الإعلام والتواصل</h3>
+          <p>الاسم: ____</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="join" class="card">
+      <div class="section-title">
+        <h2>انضم للنادي</h2>
+        <p>حط رابط الفورم</p>
+      </div>
+      <p style="color:var(--muted);line-height:1.9">
+        بدّل الرابط تحت إلى نموذج الانضمام.
+      </p>
+      <a class="btn primary" href="https://forms.gle/" target="_blank" rel="noreferrer">فتح نموذج الانضمام</a>
+    </section>
+
+    <section id="contact" class="card">
+      <div class="section-title">
+        <h2>تواصل</h2>
+        <p>إيميل + سوشال</p>
+      </div>
+      <div class="grid">
+        <div class="item">
+          <h3>الإيميل</h3>
+          <p><a href="mailto:biologyclub@ku.edu.kw">biologyclub@ku.edu.kw</a></p>
+        </div>
+        <div class="item">
+          <h3>إنستغرام</h3>
+          <p><a href="#" target="_blank" rel="noreferrer">@KU_BiologyClub</a></p>
+        </div>
+        <div class="item">
+          <h3>تليجرام/واتساب</h3>
+          <p><a href="#" target="_blank" rel="noreferrer">رابط القناة</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>© <span id="y"></span> نادي العلوم البيولوجية — جامعة الكويت</div>
+      <div class="social">
+        <a href="#">Instagram</a>
+        <a href="#">X</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
